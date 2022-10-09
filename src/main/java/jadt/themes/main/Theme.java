@@ -1,11 +1,14 @@
-package jadt.themes;
+package jadt.themes.main;
 
+import com.alee.laf.WebLookAndFeel;
+import com.formdev.flatlaf.FlatDarculaLaf;
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.formdev.flatlaf.FlatLightLaf;
 import com.jtattoo.plaf.acryl.AcrylLookAndFeel;
-import com.jtattoo.plaf.aero.AeroLookAndFeel;
 import com.jtattoo.plaf.aluminium.AluminiumLookAndFeel;
 import com.jtattoo.plaf.bernstein.BernsteinLookAndFeel;
 import com.jtattoo.plaf.fast.FastLookAndFeel;
-import com.jtattoo.plaf.graphite.GraphiteLookAndFeel;
 import com.jtattoo.plaf.hifi.HiFiLookAndFeel;
 import com.jtattoo.plaf.luna.LunaLookAndFeel;
 import com.jtattoo.plaf.mcwin.McWinLookAndFeel;
@@ -13,6 +16,8 @@ import com.jtattoo.plaf.mint.MintLookAndFeel;
 import com.jtattoo.plaf.noire.NoireLookAndFeel;
 import com.jtattoo.plaf.smart.SmartLookAndFeel;
 import com.jtattoo.plaf.texture.TextureLookAndFeel;
+import jadt.themes.AeroTheme;
+import jadt.themes.GraphiteTheme;
 import mdlaf.MaterialLookAndFeel;
 import mdlaf.themes.MaterialLiteTheme;
 import mdlaf.themes.MaterialOceanicTheme;
@@ -20,6 +25,7 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
+import java.io.IOException;
 
 public class Theme {
 
@@ -30,12 +36,12 @@ public class Theme {
         return UIManager.getSystemLookAndFeelClassName();
     }
     @Contract(value = " -> new", pure = true)
-    public static @NotNull GraphiteLookAndFeel getGraphiteTheme(){
-        return new GraphiteLookAndFeel();
+    public static @NotNull GraphiteTheme getGraphiteTheme(){
+        return new GraphiteTheme();
     }
     @Contract(value = " -> new", pure = true)
-    public static @NotNull AeroLookAndFeel getAeroTheme(){
-        return new AeroLookAndFeel();
+    public static @NotNull AeroTheme getAeroTheme(){
+        return new AeroTheme();
     }
     @Contract(value = " -> new", pure = true)
     public static @NotNull AcrylLookAndFeel getAcrylTheme(){
@@ -93,5 +99,21 @@ public class Theme {
     public static @NotNull MaterialLookAndFeel getMaterialTheme(){
         return new MaterialLookAndFeel();
     }
+    public static FlatDarkLaf getFlatDarkTheme(){
+        return new com.formdev.flatlaf.FlatDarkLaf();
+    }
+    public static FlatLightLaf getFlatLightTheme(){
+        return new com.formdev.flatlaf.FlatLightLaf();
+    }
+    public static FlatIntelliJLaf getSmartFlatLightTheme(){
+        return new com.formdev.flatlaf.FlatIntelliJLaf();
+    }
+    public static FlatDarculaLaf getSmartFlatDarkTheme(){
+        return new com.formdev.flatlaf.FlatDarculaLaf();
+    }
+    public static WebLookAndFeel getClassicWebsiteThemeClass(){
+        return new WebLookAndFeel();
+    }
+
 
 }

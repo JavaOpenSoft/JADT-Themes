@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JADT-Themes:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JADT_Themes_jar</output-path>
+    <root id="archive" name="JADT-Themes.jar">
+      <element id="module-output" name="JADT-Themes" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/JTattoo-1.6.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/jiconfont-swing-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/swing-worker-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/jiconfont-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/weblaf-core-1.2.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/flatlaf-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/material-ui-swing-1.1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/swingx-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/filters-2.0.235.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/radiance-common-6.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/radiance-animation-6.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/radiance-theming-6.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/radiance-component-6.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JADT/libs/radiance-theming-extras-6.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
